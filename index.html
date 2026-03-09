@@ -2,67 +2,84 @@
 <html>
 <head>
 <meta charset="UTF-8">
-<title>Cục Pột</title>
+<title>Lời nhắn</title>
 
 <style>
 
 body{
-background:pink;
+background: linear-gradient(to right,#9ad9ff,#c9f0ff);
+font-family: Arial;
 text-align:center;
-font-family:Arial;
-margin-top:150px;
+margin:0;
+padding:0;
+}
+
+.container{
+margin-top:120px;
 }
 
 h1{
-color:white;
-font-size:30px;
+font-size:40px;
+color:#004c6d;
+}
+
+p{
+font-size:22px;
+color:#00394f;
+line-height:1.6;
+}
+
+img{
+width:280px;
+margin-top:30px;
+border-radius:20px;
+box-shadow:0 6px 15px rgba(0,0,0,0.2);
 }
 
 button{
+margin-top:30px;
 padding:12px 25px;
 font-size:20px;
-margin:15px;
 border:none;
 border-radius:10px;
 cursor:pointer;
-}
-
-#yes{
-background:#ff4d88;
+background:#ff6fa8;
 color:white;
 }
 
-#no{
-background:white;
+button:hover{
+background:#ff4f94;
 }
 
 </style>
+
 </head>
 
 <body>
 
-<h1>
-Hallo Cục Pột,<br><br>
-xin phép được nhờ em mếch cớp tone hồng đáng yêu<br>
-và chiều tối nay được mời em đi chơi ạ 💗<br><br>
-From Cục Mỡ
-</h1>
+<div class="container">
+
+<h1>Hallo em 🌸</h1>
+
+<p>
+Xin phép được nhờ em mếch cớp tone hồng đáng yêu<br>
+và chiều tối nay được mời em đi chơi ạ ~
+</p>
+
+<p><b>From CM</b></p>
+
+<img src="https://img.tripi.vn/cdn-cgi/image/width=700,height=700/https://gcs.tripi.vn/public-tripi/tripi-feed/img/482756mZW/anh-mo-ta.png">
 
 <br>
 
-<button id="yes" onclick="yes()">Dạ được ạ 💕</button>
-<button id="no" onmouseover="run(this)">Không nha 😝</button>
+<button onclick="reply()">Dạ được ạ 💗</button>
+
+</div>
 
 <script>
 
-function yes(){
-alert("Hehe vậy là hẹn được Cục Pột rồi nha 😆💖");
-}
-
-function run(x){
-x.style.position="absolute";
-x.style.left=Math.random()*600+"px";
-x.style.top=Math.random()*400+"px";
+function reply(){
+alert("Vậy chiều nay CM qua đón nha 😆");
 }
 
 </script>
