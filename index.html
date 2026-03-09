@@ -37,9 +37,9 @@ box-shadow:0 6px 15px rgba(0,0,0,0.2);
 }
 
 button{
-margin-top:30px;
+margin:10px;
 padding:12px 25px;
-font-size:20px;
+font-size:18px;
 border:none;
 border-radius:10px;
 cursor:pointer;
@@ -57,7 +57,7 @@ background:#ff4f94;
 
 <body>
 
-<div class="container">
+<div class="container" id="main">
 
 <h1>Hallo em 🌸</h1>
 
@@ -70,16 +70,43 @@ và chiều tối nay được mời em đi chơi ạ ~
 
 <img src="https://img.tripi.vn/cdn-cgi/image/width=700,height=700/https://gcs.tripi.vn/public-tripi/tripi-feed/img/482756mZW/anh-mo-ta.png">
 
-<br>
+<br><br>
 
-<button onclick="reply()">Dạ được ạ 💗</button>
+<button onclick="yes()">OK Ngọc nuôn</button>
+<button onclick="yes()">Vui quá ạ</button>
+<button onclick="no()">Em không đi được</button>
 
 </div>
 
 <script>
 
-function reply(){
-alert("Vậy chiều nay CM qua đón nha 😆");
+function yes(){
+document.getElementById("main").innerHTML = `
+<h1>Hẹn em chiều nay nhé 💙</h1>
+
+<img src="https://hoanghamobile.com/tin-tuc/wp-content/uploads/2024/09/hinh-anh-dong-52.jpg">
+`;
+}
+
+function no(){
+document.getElementById("main").innerHTML = `
+<h1>Ỏooo, em si nghĩ lại đi mà 🥺</h1>
+
+<img src="https://i.pinimg.com/originals/86/29/17/86291777a3eb3226f026c7a9cc1b43f8.gif">
+
+<br><br>
+
+<button onclick="think()">OK em sẽ si nghĩ</button>
+<button onclick="yes()">Ok Ngọc nuôn</button>
+`;
+}
+
+function think(){
+document.getElementById("main").innerHTML = `
+<h1>Đội ơn em 🙏</h1>
+
+<img src="https://pic.pikbest.com/02/24/20/01V888piCGxh.jpg!bw700">
+`;
 }
 
 </script>
