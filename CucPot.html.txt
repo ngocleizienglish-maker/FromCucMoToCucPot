@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Cục Pột</title>
+
+<style>
+
+body{
+background:pink;
+text-align:center;
+font-family:Arial;
+margin-top:150px;
+}
+
+h1{
+color:white;
+font-size:30px;
+}
+
+button{
+padding:12px 25px;
+font-size:20px;
+margin:15px;
+border:none;
+border-radius:10px;
+cursor:pointer;
+}
+
+#yes{
+background:#ff4d88;
+color:white;
+}
+
+#no{
+background:white;
+}
+
+</style>
+</head>
+
+<body>
+
+<h1>
+Hallo Cục Pột,<br><br>
+xin phép được nhờ em mếch cớp tone hồng đáng yêu<br>
+và chiều tối nay được mời em đi chơi ạ 💗<br><br>
+From Cục Mỡ
+</h1>
+
+<br>
+
+<button id="yes" onclick="yes()">Dạ được ạ 💕</button>
+<button id="no" onmouseover="run(this)">Không nha 😝</button>
+
+<script>
+
+function yes(){
+alert("Hehe vậy là hẹn được Cục Pột rồi nha 😆💖");
+}
+
+function run(x){
+x.style.position="absolute";
+x.style.left=Math.random()*600+"px";
+x.style.top=Math.random()*400+"px";
+}
+
+</script>
+
+</body>
+</html>
